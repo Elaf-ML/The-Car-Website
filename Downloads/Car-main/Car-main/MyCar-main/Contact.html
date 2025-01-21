@@ -1,0 +1,143 @@
+<html>
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ======== CSS ========= -->
+    <link rel="stylesheet" href="./contactStyle.css" />
+  <!-- ======== CSS ========= -->
+  <link rel="stylesheet" href="./Style.css" />
+
+  <!-- ======== FAVICON ========== -->
+
+
+  <!-- ======= REMIX ICONS ======== -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+
+  <!-- ====== SWIPER CSS =========-->
+  <link rel="stylesheet" href="/assets/swiper-bundle.min.css" />
+    
+    <title>Contact us
+
+    </title>
+  </head>
+
+<body>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">
+        <i class="ri-steering-2-line"></i>
+        TESLA
+      </a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="./Main.html" class="nav__link active-link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="./Main.html#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="./Main.html#popular" class="nav__link">Popular</a>
+          </li>
+          <li class="nav__item">
+            <a href="./Main.html#featured" class="nav__link">Featured</a>
+          </li>
+          <li class="nav__item">
+            <a href="./Policy.html" class="nav__link">Policy</a>
+          </li>
+
+          <li class="nav__item">
+              <a href="./Contact.html" class="nav__link">Contact Us</a>
+            </li>
+        </ul>
+
+        <div class="nav__close" id="nav-close">
+          <i class="ri-close-line"></i>
+        </div>
+      </div>
+
+      <!-- Toggle button -->
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="ri-menu-line"></i>
+      </div>
+    </nav>
+  </header>
+
+    <div class="Card-Title">
+        <h1>Contact Us Now
+        
+        </h1>
+    </div>
+
+    <div class="background">
+        <div class="container">
+          <div class="screen">
+            <div class="screen-header">
+              <div class="screen-header-left">
+                <div class="screen-header-button close"></div>
+                <div class="screen-header-button maximize"></div>
+                <div class="screen-header-button minimize"></div>
+              </div>
+              <div class="screen-header-right">
+                <div class="screen-header-ellipsis"></div>
+                <div class="screen-header-ellipsis"></div>
+                <div class="screen-header-ellipsis"></div>
+              </div>
+            </div>
+            <div class="screen-body">
+              <div class="screen-body-item left">
+                <div class="app-title">
+                  <span>CONTACT</span>
+                  <span>US</span>
+                </div>
+                <div class="app-contact">CALL US : +46 7 30 94 678</div>
+              </div>
+              <div class="screen-body-item">
+                <form action="mailto:someone@example.com" method="post" enctype="text/plain" class="app-form">
+                  <div class="app-form-group">
+                    <input required class="app-form-control" placeholder="NAME" name="name">
+                  </div>
+                  <div class="app-form-group">
+                    <input required class="app-form-control" placeholder="EMAIL" name="email">
+                  </div>
+                  <div class="app-form-group">
+                    <input required class="app-form-control" placeholder="CONTACT NO" name="contact">
+                  </div>
+                  <div class="app-form-group message">
+                    <input required class="app-form-control" placeholder="MESSAGE" name="message">
+                  </div>
+                  <div class="app-form-group buttons">
+                    <button type="reset" class="app-form-button">CANCEL</button>
+                    <button type="submit" class="app-form-button">SEND</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+      
+  <!-- ========= MAIN JS ============= -->
+  <script src="/script.js"></script>
+  <script>
+    const navMenu = document.getElementById('nav-menu'),
+          navToggle = document.getElementById('nav-toggle');
+
+    if(navToggle){
+      navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('show-menu');
+      });
+    }
+  </script>
+</body>
+</html>
